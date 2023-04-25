@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');         /*url font family(ecriture)*/ 
+*{
+   margin: 0;                                                            /*creer marge*/
+   padding: 0;                                                          /*creer espace autour du contenu*/
+   box-sizing: border-box;                                     /*Defines how the width and height of an element are calculated*/
+   font-family: 'Poppins',sans-serif;
+}
+body{
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;                                                /*aligner formulaire au milieu*/  
+   background: linear-gradient(whitesmoke,#0AA0BE);                 /*melange couleurs background*/
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+textarea{
+   resize: none;                                   /*ne pas modifier text taille area*/
+}
+.main{                                             /*isoler formulaire du body*/
+   max-width: 700px;                      
+   width: 100%;
+   background: lightblue;
+   padding: 25px 30px;    
+   border-radius: 5%;  
+   border: 3px solid #0AA0BE;                 
+}
+.main .title{
+   font-size: 25px;
+   font-weight: 500;
+   position: relative;
+}
+.main .title::before {                /*before pour que contenu css soit avant contenu html*/                             
+   content:'';
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 4px;
+   width: 30px;
+   background: linear-gradient(#0AA0BE,whitesmoke);
+}
+.main form .infoPers,.infoCmpt,.infoEnt input:focus,                            /*border color*/
+.main form .infoPers,.infoCmpt,.infoEnt input:valid{                         
+   border-color: #0AA0BE;
+}
+label{
+   font-style: italic;
+   font-weight: bold;
+}
+h2,h3{
+   text-decoration-line: underline;
+}
+

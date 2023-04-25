@@ -1,0 +1,49 @@
+.left {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.right {
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.logo {
+    width: 42px;
+    height: 42px;
+    margin: auto;
+    text-align: center;
+}
+
+nav {
+    background-image: linear-gradient( whitesmoke,white);
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    top: 0;
+    position: sticky;
+    /*z-index:999;*/
+}
+
+nav a {
+    margin: auto;
+    padding: 10px;
+    background-color: lightblue;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px -5px gray;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+nav a span {
+    color: gray;
+}

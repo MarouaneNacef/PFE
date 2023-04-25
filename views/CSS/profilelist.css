@@ -1,0 +1,144 @@
+*, ::after, :before  {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background: fixed;
+    background-repeat: no-repeat;
+}
+
+.left {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.right {
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+form {
+    margin: auto;
+}
+
+td {
+    text-align: center;
+}
+
+nav a {
+    margin: auto;
+    padding: 10px;
+    background-color: lightblue;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px -5px gray;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+nav a span {
+    color: gray;
+}
+
+.main {
+    position: relative;
+}
+
+div div {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: lightcyan;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+
+}
+
+div{
+    position: relative;
+}
+
+div h1 {
+    font-size: medium;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+th {
+    border-collapse: collapse;
+}
+
+td {
+    border-top: 1px solid;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    background-color: lightblue;
+}
+
+footer {
+    width:100%;
+    height: 65px;
+    text-align: center;
+    background-image: linear-gradient( whitesmoke,white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 65px;
+}
+
+.logo {
+    width: 42px;
+    height: 42px;
+    margin: auto;
+    text-align: center;
+}
+
+.down{
+    margin-left: 30px;
+    width: 48px;
+    text-align: center;
+}
+.backvid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+   background-attachment: fixed;
+ }
+input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(whitesmoke,lightblue);
+    height: 30px;
+    border-radius: 40px;
+    padding: 10px;
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');         /*url font family(ecriture)*/ 
+*{
+   margin: 0;                                                            /*creer marge*/
+   padding: 0;                                                          /*creer espace autour du contenu*/
+   box-sizing: border-box;                                     /*Defines how the width and height of an element are calculated*/
+   font-family: 'Poppins',sans-serif;
+}
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;                                                /*aligner formulaire au milieu*/  
+   background: linear-gradient(whitesmoke,#0AA0BE);                 /*melange couleurs background*/
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+textarea{
+   resize: none;                                   /*ne pas modifier text taille area*/
+}
+.main{                                             /*isoler formulaire du body*/
+   max-width: 700px;                      
+   width: 100%;
+   background: lightblue;
+   padding: 25px 30px;    
+   border-radius: 5%;  
+   border: 3px solid #0AA0BE;                 
+}
+.main .title{
+   font-size: 25px;
+   font-weight: 500;
+   position: relative;
+}
+.main .title::before {                /*before pour que contenu css soit avant contenu html*/                             
+   content:'';
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 4px;
+   width: 30px;
+   background: linear-gradient(#0AA0BE,whitesmoke);
+}
+.main form .infoPers,.infoCmpt,.infoEnt{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   
+}
+.main form .infoPers input,.infoCmpt input,.infoEnt input{
+   height: 45px;
+   width: 100%;
+   outline: none;
+   border-radius: 5px;
+   border: 1px solid #0AA0BE;
+   padding-left: 15px;
+   font-size: 16px;
+   border-bottom-width: 2px;
+}
+.main form .infoPers,.infoCmpt,.infoEnt input:focus,                            /*border color*/
+.main form .infoPers,.infoCmpt,.infoEnt input:valid{                         
+   border-color: #0AA0BE;
+}
+form .sixthlabel,.seventhlabel,.eighthlabel{
+   font-size: 20px;
+   font-weight: 500;
+}
+form .button{
+   height: 45px;
+   margin: 45px 0;
+}
+form .button input{
+   height: 100%;
+   width: 100%;
+   outline: none;
+   color: black;
+   font-size: 18px;
+   font-weight: 500;
+   border-radius: 5px;
+   letter-spacing: 1px;
+   border: 1px solid #0AA0BE;
+   background: linear-gradient(#6ab6c5,whitesmoke) ;
+}
+input[type='radio']:checked:after {
+   width: 10px;
+   height: 10px;
+   border-radius: 10px;
+   top: 0px;
+   left: -0.5px;
+   position: relative;
+   background-color: #0AA0BE;
+   content: '';
+   display: inline-block;
+   visibility: visible;
+   border: 2px solid white;
+}
+
+ 
+ .box select {
+   background-color: #6ab6c5;
+   color: white;
+   padding: 4px;
+   width: 200px;
+   border: none;
+   font-size: 20px;
+   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+   -webkit-appearance: button;
+   appearance: button;
+   outline: none;
+ }
